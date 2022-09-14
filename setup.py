@@ -5,7 +5,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='mtda-mqtt',
+    name='mtda_mqtt',
     version='1.0.0',
     scripts=['mtda-mqtt-cli'],
     description='Multi-Tenant Devices Access-MQTT',
@@ -23,6 +23,5 @@ setup(
     install_requires=[
         "python-daemon>=2.0",
         "paho-mqtt",
-        "mosquitto"
     ],
 )
