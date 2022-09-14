@@ -6,6 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='mtda_mqtt',
+    packages=find_packages(),
     version='1.0.0',
     scripts=['mtda-mqtt-cli'],
     description='Multi-Tenant Devices Access-MQTT',
