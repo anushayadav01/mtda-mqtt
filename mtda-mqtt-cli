@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from mtda_mqtt import MTDAMqtt
+from mtda_mqtt.main import MTDAMqtt
 
 obj1= MTDAMqtt()
 print(obj1.name)
