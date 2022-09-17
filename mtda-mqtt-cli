@@ -6,6 +6,10 @@ import sys
 from mtda_mqtt.main import MTDAMqtt
 
 class A:
+    def __init__(self):
+        self.agent = None
+        self.remote = "localhost"
+
     def main(self):
         config = None
         daemonize = False
@@ -19,13 +23,16 @@ class A:
             if opt in ('-d', '--daemon'):
                 daemonize = True
             if opt in ('-h', '--help'):
+                self.help_cmd()
                 sys.exit(0)
+            if opt in ('-n', '--no-detach'):
+                detach = False
             if opt in ('-r', '--remote'):
                 self.remote = arg
                 print(self.remote)
             if opt in ('-v', '--version'):
                 sys.exit(0)
-        print(stuff)
+        print(len(stuff), stuff)
 
 
 if __name__ == '__main__':
