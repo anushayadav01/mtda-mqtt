@@ -24,5 +24,7 @@ setup(
     install_requires=[
         "python-daemon>=2.0",
         "paho-mqtt",
+        "socket",
+        "zerorpc>=0.6.0"
     ],
 )

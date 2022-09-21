@@ -16,5 +16,7 @@ class MTDAMqtt(object):
         self.remote = None
         self.socket = None
 
+    '''
     def debug(self, lvl, msg):
         if self.debug
+    '''
